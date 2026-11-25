@@ -1,0 +1,900 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.13/dist-packages/pydantic/main.py:280: PretrainWeightsCompatibilityWarning: RFDETRSegNanoConfig was instantiated with pretrain_weights=None. The model will be initialised from scratch, which typically produces lower accuracy than fine-tuning from the published checkpoint ('rf-detr-seg-nano.pt').
+  validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+/usr/local/lib/python3.13/dist-packages/pydantic/main.py:280: PretrainWeightsCompatibilityWarning: RFDETRSegNanoConfig was instantiated with pretrain_weights=None. The model will be initialised from scratch, which typically produces lower accuracy than fine-tuning from the published checkpoint ('rf-detr-seg-nano.pt').
+  validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+[2026-11-21 07:12:01] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights and the backbone starts from random initialization. Load pretrained RF-DETR weights or a checkpoint to initialize it.
+[2026-11-21 07:12:01] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights and the backbone starts from random initialization. Load pretrained RF-DETR weights or a checkpoint to initialize it.
+[2026-11-21 07:12:01] [WARNING] rf-detr - Using patch size 12 instead of 14, which means we're not loading DINOv2 backbone weights and the backbone starts from random initialization. Load pretrained RF-DETR weights or a checkpoint to initialize it.
+[2026-11-21 07:12:01] [WARNING] rf-detr - Using patch size 12 instead of 14, which means we're not loading DINOv2 backbone weights and the backbone starts from random initialization. Load pretrained RF-DETR weights or a checkpoint to initialize it.
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/2
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/2
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 2 processes
+----------------------------------------------------------------------------------------------------
+
+/usr/local/lib/python3.13/dist-packages/lightning_fabric/loggers/csv_logs.py:268: Experiment logs directory /kaggle/working/rfdetr_seg_nano_runs/scratch/ exists and is not empty. Previous log files in this directory will be deleted when the new ones are saved!
+[2026-11-21 07:12:03] [INFO] rf-detr - Building Roboflow train dataset with square resize at resolution 312
+[2026-11-21 07:12:03] [INFO] rf-detr - Building Roboflow train dataset with square resize at resolution 312
+[2026-11-21 07:12:03] [INFO] rf-detr - Using multi-scale training with square resize and scales: [372]
+[2026-11-21 07:12:03] [INFO] rf-detr - Using multi-scale training with square resize and scales: [372]
+[2026-11-21 07:12:03] [INFO] rf-detr - Built 1 Albumentations transforms from config
+[2026-11-21 07:12:03] [INFO] rf-detr - Built 1 Albumentations transforms from config
+[2026-11-21 07:12:03] [INFO] rf-detr - Built 1 Albumentations transforms from config
+[2026-11-21 07:12:03] [INFO] rf-detr - Built 1 Albumentations transforms from config
+loading annotations into memory...loading annotations into memory...
+
+Done (t=0.04s)
+creating index...
+Done (t=0.04s)
+creating index...
+index created!
+index created!
+[2026-11-21 07:12:03] [INFO] rf-detr - Skipping unannotated COCO grouping categories when assigning label indices: 0 (indoor-objects)
+[2026-11-21 07:12:03] [INFO] rf-detr - Skipping unannotated COCO grouping categories when assigning label indices: 0 (indoor-objects)
+[2026-11-21 07:12:03] [INFO] rf-detr - Building Roboflow val dataset with square resize at resolution 312
+[2026-11-21 07:12:03] [INFO] rf-detr - Using multi-scale training with square resize and scales: [372]
+loading annotations into memory...
+[2026-11-21 07:12:03] [INFO] rf-detr - Building Roboflow val dataset with square resize at resolution 312
+[2026-11-21 07:12:03] [INFO] rf-detr - Using multi-scale training with square resize and scales: [372]
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+Done (t=0.01s)
+creating index...
+index created!
+index created!
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py:881: Checkpoint directory /kaggle/working/rfdetr_seg_nano_runs/scratch exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1]
+Loading `train_dataloader` to estimate number of stepping batches.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+[rank: 1] Seed set to 43
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/utilities/model_summary/model_summary.py:242: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+┏━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┓
+┃   ┃ Name        ┃ Type         ┃ Params ┃ Mode  ┃ FLOPs ┃
+┡━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━┩
+│ 0 │ model       │ LWDETR       │ 33.5 M │ train │     0 │
+│ 1 │ criterion   │ SetCriterion │      0 │ train │     0 │
+│ 2 │ postprocess │ PostProcess  │      0 │ train │     0 │
+└───┴─────────────┴──────────────┴────────┴───────┴───────┘
+Trainable params: 33.5 M                                                        
+Non-trainable params: 0                                                         
+Total params: 33.5 M                                                            
+Total estimated model params size (MB): 134.080                                 
+Modules in train mode: 513                                                      
+Modules in eval mode: 0                                                         
+Total FLOPs: 0                                                                  
+[rank: 0] Seed set to 42
+/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py:869: UserWarning: The AccumulateGrad node's stream does not match the stream of the node that produced the incoming gradient. This may incur unnecessary synchronization and break CUDA graph capture if the AccumulateGrad node's stream is the default stream. This mismatch is caused by an AccumulateGrad node created prior to the current iteration being kept alive. This can happen if the autograd graph is still being kept alive by tensors such as the loss, or if you are using DDP, which will stash a reference to the node. To resolve the mismatch, delete all references to the autograd graph or ensure that DDP initialization is performed under the same stream as subsequent forwards. If the mismatch is intentional, you can use torch.autograd.graph.set_warn_on_accumulate_grad_stream_mismatch(False) to suppress this warning. (Triggered internally at /pytorch/torch/csrc/autograd/input_buffer.cpp:240.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py:869: UserWarning: The AccumulateGrad node's stream does not match the stream of the node that produced the incoming gradient. This may incur unnecessary synchronization and break CUDA graph capture if the AccumulateGrad node's stream is the default stream. This mismatch is caused by an AccumulateGrad node created prior to the current iteration being kept alive. This can happen if the autograd graph is still being kept alive by tensors such as the loss, or if you are using DDP, which will stash a reference to the node. To resolve the mismatch, delete all references to the autograd graph or ensure that DDP initialization is performed under the same stream as subsequent forwards. If the mismatch is intentional, you can use torch.autograd.graph.set_warn_on_accumulate_grad_stream_mismatch(False) to suppress this warning. (Triggered internally at /pytorch/torch/csrc/autograd/input_buffer.cpp:240.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py:869: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [256, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [256, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at /pytorch/torch/csrc/distributed/c10d/reducer.cpp:332.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py:869: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [256, 256, 1, 1], strides() = [256, 1, 256, 256]
+bucket_view.sizes() = [256, 256, 1, 1], strides() = [256, 1, 1, 1] (Triggered internally at /pytorch/torch/csrc/distributed/c10d/reducer.cpp:332.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/core/module.py:1333: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/core/module.py:1333: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[2026-11-21 07:12:29] [INFO] rf-detr - Skipping validation-loss computation: compute_val_loss='auto' found no scheduler or callback monitoring 'val/loss', so no 'val/loss' metric is logged this run. Set compute_val_loss=True to log it every validation epoch (for example to read the curve from metrics.csv, TensorBoard, or Weights & Biases).
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/ema_mAP_50_95', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/ema_mAP_50', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/ema_mAP_75', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/ema_mAR', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/ema_segm_mAP_50_95', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/ema_segm_mAP_50', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/mAP_50_95', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/mAP_50', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/mAP_75', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/mAR', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/segm_mAP_50_95', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/segm_mAP_50', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/F1', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/precision', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('val/recall', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m1[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0002[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_ce', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/class_error', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_bbox', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_giou', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/cardinality_error', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_mask_ce', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_mask_dice', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/cardinality_error_0', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/cardinality_error_1', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/cardinality_error_2', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/cardinality_error_enc', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_ce_aux', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_bbox_aux', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_giou_aux', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_mask_ce_aux', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss_mask_dice_aux', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/usr/local/lib/python3.13/dist-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:433: It is recommended to use `self.log('train/loss', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m2[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m │ [1;36m0.0002[0m │ [1;36m0.0006[0m │ [1;36m0.0004[0m │ [1;36m0.0025[0m │ [1;36m0.0001[0m │ [1;36m0.0002[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:13:03] [INFO] rf-detr - Best EMA metric improved to 0.0001 (epoch 1)
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m3[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0000[0m │ [1;36m0.0001[0m │ [1;36m0.0000[0m │ [1;36m0.0019[0m │ [1;36m0.0006[0m │ [1;36m0.0004[0m │ [1;36m0.0034[0m │ [1;36m0.0001[0m │ [1;36m0.0001[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m4[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0000[0m │ [1;36m0.0001[0m │ [1;36m0.0000[0m │ [1;36m0.0016[0m │ [1;36m0.0004[0m │ [1;36m0.0003[0m │ [1;36m0.0053[0m │ [1;36m0.0000[0m │ [1;36m0.0000[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m5[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0001[0m │ [1;36m0.0003[0m │ [1;36m0.0000[0m │ [1;36m0.0029[0m │ [1;36m0.0009[0m │ [1;36m0.0005[0m │ [1;36m0.0081[0m │ [1;36m0.0000[0m │ [1;36m0.0001[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m6[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0001[0m │ [1;36m0.0003[0m │ [1;36m0.0000[0m │ [1;36m0.0054[0m │ [1;36m0.0014[0m │ [1;36m0.0009[0m │ [1;36m0.0087[0m │ [1;36m0.0000[0m │ [1;36m0.0001[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m7[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0001[0m │ [1;36m0.0005[0m │ [1;36m0.0001[0m │ [1;36m0.0049[0m │ [1;36m0.0013[0m │ [1;36m0.0036[0m │ [1;36m0.0022[0m │ [1;36m0.0000[0m │ [1;36m0.0002[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m8[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0003[0m │ [1;36m0.0011[0m │ [1;36m0.0001[0m │ [1;36m0.0073[0m │ [1;36m0.0016[0m │ [1;36m0.0012[0m │ [1;36m0.0032[0m │ [1;36m0.0001[0m │ [1;36m0.0003[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:15:56] [INFO] rf-detr - Best EMA metric improved to 0.0001 (epoch 7)
+                     Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m9[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0002[0m │ [1;36m0.0008[0m │ [1;36m0.0001[0m │ [1;36m0.0077[0m │ [1;36m0.0025[0m │ [1;36m0.0023[0m │ [1;36m0.0103[0m │ [1;36m0.0001[0m │ [1;36m0.0006[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:16:25] [INFO] rf-detr - Best EMA metric improved to 0.0001 (epoch 8)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m10[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0004[0m │ [1;36m0.0016[0m │ [1;36m0.0001[0m │ [1;36m0.0091[0m │ [1;36m0.0038[0m │ [1;36m0.0116[0m │ [1;36m0.0115[0m │ [1;36m0.0004[0m │ [1;36m0.0014[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:16:56] [INFO] rf-detr - Best EMA metric improved to 0.0004 (epoch 9)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m11[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0005[0m │ [1;36m0.0015[0m │ [1;36m0.0003[0m │ [1;36m0.0096[0m │ [1;36m0.0036[0m │ [1;36m0.0081[0m │ [1;36m0.0082[0m │ [1;36m0.0005[0m │ [1;36m0.0016[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:17:32] [INFO] rf-detr - Best EMA metric improved to 0.0005 (epoch 10)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m12[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0005[0m │ [1;36m0.0017[0m │ [1;36m0.0002[0m │ [1;36m0.0113[0m │ [1;36m0.0047[0m │ [1;36m0.0038[0m │ [1;36m0.0220[0m │ [1;36m0.0004[0m │ [1;36m0.0014[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m13[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0006[0m │ [1;36m0.0019[0m │ [1;36m0.0002[0m │ [1;36m0.0110[0m │ [1;36m0.0045[0m │ [1;36m0.0142[0m │ [1;36m0.0053[0m │ [1;36m0.0004[0m │ [1;36m0.0015[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m14[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0006[0m │ [1;36m0.0020[0m │ [1;36m0.0004[0m │ [1;36m0.0116[0m │ [1;36m0.0058[0m │ [1;36m0.0052[0m │ [1;36m0.0142[0m │ [1;36m0.0005[0m │ [1;36m0.0018[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:19:01] [INFO] rf-detr - Best EMA metric improved to 0.0005 (epoch 13)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m15[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0009[0m │ [1;36m0.0020[0m │ [1;36m0.0008[0m │ [1;36m0.0124[0m │ [1;36m0.0052[0m │ [1;36m0.0057[0m │ [1;36m0.0098[0m │ [1;36m0.0008[0m │ [1;36m0.0024[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:19:30] [INFO] rf-detr - Best EMA metric improved to 0.0008 (epoch 14)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m16[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0007[0m │ [1;36m0.0031[0m │ [1;36m0.0003[0m │ [1;36m0.0133[0m │ [1;36m0.0053[0m │ [1;36m0.0052[0m │ [1;36m0.0140[0m │ [1;36m0.0004[0m │ [1;36m0.0011[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m17[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0009[0m │ [1;36m0.0031[0m │ [1;36m0.0004[0m │ [1;36m0.0145[0m │ [1;36m0.0057[0m │ [1;36m0.0038[0m │ [1;36m0.0223[0m │ [1;36m0.0007[0m │ [1;36m0.0023[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m18[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0008[0m │ [1;36m0.0032[0m │ [1;36m0.0003[0m │ [1;36m0.0142[0m │ [1;36m0.0069[0m │ [1;36m0.0069[0m │ [1;36m0.0164[0m │ [1;36m0.0007[0m │ [1;36m0.0020[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m19[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0013[0m │ [1;36m0.0033[0m │ [1;36m0.0008[0m │ [1;36m0.0157[0m │ [1;36m0.0067[0m │ [1;36m0.0058[0m │ [1;36m0.0173[0m │ [1;36m0.0009[0m │ [1;36m0.0029[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:21:29] [INFO] rf-detr - Best EMA metric improved to 0.0009 (epoch 18)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m20[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0010[0m │ [1;36m0.0033[0m │ [1;36m0.0002[0m │ [1;36m0.0161[0m │ [1;36m0.0078[0m │ [1;36m0.0092[0m │ [1;36m0.0149[0m │ [1;36m0.0010[0m │ [1;36m0.0028[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:21:59] [INFO] rf-detr - Best EMA metric improved to 0.0010 (epoch 19)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m21[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0010[0m │ [1;36m0.0031[0m │ [1;36m0.0006[0m │ [1;36m0.0163[0m │ [1;36m0.0075[0m │ [1;36m0.0069[0m │ [1;36m0.0143[0m │ [1;36m0.0007[0m │ [1;36m0.0026[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m22[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0008[0m │ [1;36m0.0030[0m │ [1;36m0.0003[0m │ [1;36m0.0164[0m │ [1;36m0.0083[0m │ [1;36m0.0218[0m │ [1;36m0.0308[0m │ [1;36m0.0011[0m │ [1;36m0.0039[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:23:02] [INFO] rf-detr - Best EMA metric improved to 0.0011 (epoch 21)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m23[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0014[0m │ [1;36m0.0040[0m │ [1;36m0.0008[0m │ [1;36m0.0176[0m │ [1;36m0.0085[0m │ [1;36m0.0086[0m │ [1;36m0.0389[0m │ [1;36m0.0013[0m │ [1;36m0.0033[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:23:31] [INFO] rf-detr - Best EMA metric improved to 0.0013 (epoch 22)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m24[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0010[0m │ [1;36m0.0037[0m │ [1;36m0.0004[0m │ [1;36m0.0168[0m │ [1;36m0.0093[0m │ [1;36m0.0079[0m │ [1;36m0.0181[0m │ [1;36m0.0012[0m │ [1;36m0.0041[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m25[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0011[0m │ [1;36m0.0043[0m │ [1;36m0.0003[0m │ [1;36m0.0176[0m │ [1;36m0.0084[0m │ [1;36m0.0070[0m │ [1;36m0.0179[0m │ [1;36m0.0013[0m │ [1;36m0.0037[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:24:30] [INFO] rf-detr - Best EMA metric improved to 0.0013 (epoch 24)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m26[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0013[0m │ [1;36m0.0046[0m │ [1;36m0.0003[0m │ [1;36m0.0195[0m │ [1;36m0.0103[0m │ [1;36m0.0094[0m │ [1;36m0.0209[0m │ [1;36m0.0013[0m │ [1;36m0.0043[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:25:00] [INFO] rf-detr - Best EMA metric improved to 0.0013 (epoch 25)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m27[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0015[0m │ [1;36m0.0057[0m │ [1;36m0.0006[0m │ [1;36m0.0183[0m │ [1;36m0.0092[0m │ [1;36m0.0086[0m │ [1;36m0.0146[0m │ [1;36m0.0014[0m │ [1;36m0.0038[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:25:30] [INFO] rf-detr - Best EMA metric improved to 0.0014 (epoch 26)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m28[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0016[0m │ [1;36m0.0046[0m │ [1;36m0.0006[0m │ [1;36m0.0201[0m │ [1;36m0.0097[0m │ [1;36m0.0070[0m │ [1;36m0.0230[0m │ [1;36m0.0015[0m │ [1;36m0.0046[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:25:59] [INFO] rf-detr - Best EMA metric improved to 0.0015 (epoch 27)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m29[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0017[0m │ [1;36m0.0054[0m │ [1;36m0.0009[0m │ [1;36m0.0217[0m │ [1;36m0.0120[0m │ [1;36m0.0106[0m │ [1;36m0.0254[0m │ [1;36m0.0019[0m │ [1;36m0.0053[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:26:28] [INFO] rf-detr - Best EMA metric improved to 0.0019 (epoch 28)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m30[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0026[0m │ [1;36m0.0061[0m │ [1;36m0.0024[0m │ [1;36m0.0225[0m │ [1;36m0.0123[0m │ [1;36m0.0118[0m │ [1;36m0.0273[0m │ [1;36m0.0019[0m │ [1;36m0.0050[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m31[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0018[0m │ [1;36m0.0056[0m │ [1;36m0.0012[0m │ [1;36m0.0229[0m │ [1;36m0.0105[0m │ [1;36m0.0088[0m │ [1;36m0.0263[0m │ [1;36m0.0019[0m │ [1;36m0.0059[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m32[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0020[0m │ [1;36m0.0056[0m │ [1;36m0.0010[0m │ [1;36m0.0239[0m │ [1;36m0.0102[0m │ [1;36m0.0070[0m │ [1;36m0.0376[0m │ [1;36m0.0024[0m │ [1;36m0.0058[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:28:01] [INFO] rf-detr - Best EMA metric improved to 0.0024 (epoch 31)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m33[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0019[0m │ [1;36m0.0055[0m │ [1;36m0.0009[0m │ [1;36m0.0245[0m │ [1;36m0.0118[0m │ [1;36m0.0106[0m │ [1;36m0.0211[0m │ [1;36m0.0025[0m │ [1;36m0.0060[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:28:31] [INFO] rf-detr - Best EMA metric improved to 0.0025 (epoch 32)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m34[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0021[0m │ [1;36m0.0063[0m │ [1;36m0.0009[0m │ [1;36m0.0255[0m │ [1;36m0.0138[0m │ [1;36m0.0168[0m │ [1;36m0.0177[0m │ [1;36m0.0023[0m │ [1;36m0.0061[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m35[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0021[0m │ [1;36m0.0071[0m │ [1;36m0.0007[0m │ [1;36m0.0244[0m │ [1;36m0.0134[0m │ [1;36m0.0138[0m │ [1;36m0.0188[0m │ [1;36m0.0022[0m │ [1;36m0.0058[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m36[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0020[0m │ [1;36m0.0069[0m │ [1;36m0.0007[0m │ [1;36m0.0265[0m │ [1;36m0.0130[0m │ [1;36m0.0111[0m │ [1;36m0.0259[0m │ [1;36m0.0021[0m │ [1;36m0.0054[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m37[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0020[0m │ [1;36m0.0060[0m │ [1;36m0.0009[0m │ [1;36m0.0268[0m │ [1;36m0.0118[0m │ [1;36m0.0152[0m │ [1;36m0.0191[0m │ [1;36m0.0025[0m │ [1;36m0.0057[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:30:29] [INFO] rf-detr - Best EMA metric improved to 0.0025 (epoch 36)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m38[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0023[0m │ [1;36m0.0069[0m │ [1;36m0.0012[0m │ [1;36m0.0281[0m │ [1;36m0.0140[0m │ [1;36m0.0113[0m │ [1;36m0.0294[0m │ [1;36m0.0024[0m │ [1;36m0.0061[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m39[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0018[0m │ [1;36m0.0060[0m │ [1;36m0.0008[0m │ [1;36m0.0276[0m │ [1;36m0.0141[0m │ [1;36m0.0136[0m │ [1;36m0.0220[0m │ [1;36m0.0021[0m │ [1;36m0.0055[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m40[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0022[0m │ [1;36m0.0066[0m │ [1;36m0.0013[0m │ [1;36m0.0290[0m │ [1;36m0.0160[0m │ [1;36m0.0230[0m │ [1;36m0.0190[0m │ [1;36m0.0026[0m │ [1;36m0.0064[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:31:57] [INFO] rf-detr - Best EMA metric improved to 0.0026 (epoch 39)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m41[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0021[0m │ [1;36m0.0061[0m │ [1;36m0.0011[0m │ [1;36m0.0283[0m │ [1;36m0.0159[0m │ [1;36m0.0139[0m │ [1;36m0.0283[0m │ [1;36m0.0029[0m │ [1;36m0.0072[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:32:31] [INFO] rf-detr - Best EMA metric improved to 0.0029 (epoch 40)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m42[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0025[0m │ [1;36m0.0077[0m │ [1;36m0.0012[0m │ [1;36m0.0297[0m │ [1;36m0.0169[0m │ [1;36m0.0259[0m │ [1;36m0.0170[0m │ [1;36m0.0032[0m │ [1;36m0.0078[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:33:00] [INFO] rf-detr - Best EMA metric improved to 0.0032 (epoch 41)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m43[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0023[0m │ [1;36m0.0068[0m │ [1;36m0.0012[0m │ [1;36m0.0302[0m │ [1;36m0.0164[0m │ [1;36m0.0138[0m │ [1;36m0.0282[0m │ [1;36m0.0026[0m │ [1;36m0.0067[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m44[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0023[0m │ [1;36m0.0070[0m │ [1;36m0.0010[0m │ [1;36m0.0295[0m │ [1;36m0.0176[0m │ [1;36m0.0191[0m │ [1;36m0.0231[0m │ [1;36m0.0029[0m │ [1;36m0.0073[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m45[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0025[0m │ [1;36m0.0075[0m │ [1;36m0.0014[0m │ [1;36m0.0307[0m │ [1;36m0.0177[0m │ [1;36m0.0316[0m │ [1;36m0.0189[0m │ [1;36m0.0029[0m │ [1;36m0.0071[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m46[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0027[0m │ [1;36m0.0079[0m │ [1;36m0.0014[0m │ [1;36m0.0307[0m │ [1;36m0.0193[0m │ [1;36m0.0188[0m │ [1;36m0.0273[0m │ [1;36m0.0032[0m │ [1;36m0.0073[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m47[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0027[0m │ [1;36m0.0083[0m │ [1;36m0.0013[0m │ [1;36m0.0316[0m │ [1;36m0.0196[0m │ [1;36m0.0253[0m │ [1;36m0.0219[0m │ [1;36m0.0034[0m │ [1;36m0.0081[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:35:28] [INFO] rf-detr - Best EMA metric improved to 0.0034 (epoch 46)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m48[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0030[0m │ [1;36m0.0090[0m │ [1;36m0.0011[0m │ [1;36m0.0314[0m │ [1;36m0.0198[0m │ [1;36m0.0178[0m │ [1;36m0.0287[0m │ [1;36m0.0036[0m │ [1;36m0.0081[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+[2026-11-21 07:35:58] [INFO] rf-detr - Best EMA metric improved to 0.0036 (epoch 47)
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m49[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0029[0m │ [1;36m0.0085[0m │ [1;36m0.0012[0m │ [1;36m0.0328[0m │ [1;36m0.0212[0m │ [1;36m0.0242[0m │ [1;36m0.0249[0m │ [1;36m0.0034[0m │ [1;36m0.0082[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+                    Val [1m([0mema[1m)[0m [1m([0mEpoch [1;36m50[0m/[1;36m50[0m[1m)[0m — Overall Metrics                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━
+━┓
+┃           mAP            ┃  mAR   ┃         F1 sweep         ┃     segm mAP   
+┃
+┡━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━╇━━━━━━━━┯━━━━━━━━┯━━━━━━━━╇━━━━━━━━┯━━━━━━━
+━┩
+│ [1;92m50:95[0m  │   [1;36m50[0m   │   [1;36m75[0m   │  @[1;36m500[0m  │   F1   │  Prec  │ Recall │ [1;92m50:95[0m  │   [1;36m50[0m  
+│
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼───────
+─┤
+│ [1;36m0.0034[0m │ [1;36m0.0103[0m │ [1;36m0.0016[0m │ [1;36m0.0341[0m │ [1;36m0.0213[0m │ [1;36m0.0226[0m │ [1;36m0.0260[0m │ [1;36m0.0035[0m │ [1;36m0.0080[0m
+│
+└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────
+─┘
+`Trainer.fit` stopped: `max_epochs=50` reached.
+[2026-11-21 07:37:07] [INFO] rf-detr - Best total checkpoint saved from EMA (regular=0.0000, ema=0.0036)
