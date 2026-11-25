@@ -1,0 +1,15 @@
+image_name,candidate_conditions,visual_basis,review_status
+20261124_095547.jpg,low light,dim bedroom scene,confirm at full resolution
+20261124_120458.jpg,low light; multiple objects; oblique view,dark desk scene with laptop keyboard and mouse,confirm at full resolution
+20261124_120356.jpg,low light; clutter; oblique view,dark close view of several desk objects,confirm at full resolution
+20261123_132737.jpg,overlapping instances; people in scene,crowded table with partially occluded objects,confirm at full resolution
+20261124_121049.jpg,clutter; overlapping instances,crowded kitchen utensils and containers,confirm at full resolution
+20261121_113455.jpg,clutter; multiple instances,shared table with many small objects,confirm at full resolution
+20261121_140159.jpg,stacked objects; occlusion; oblique view,cardboard boxes overlap and hide one another,confirm at full resolution
+20261123_092703.jpg,bright window background; multiple chairs,window light behind rows of chairs,confirm at full resolution
+20261123_092756.jpg,bright window background; overlapping chairs,table and chairs against bright windows,confirm at full resolution
+20261110_234201.jpg,low light; oblique view,photo taken from a high diagonal angle with dark display objects,confirm at full resolution
+20261124_121110.jpg,clutter; overlapping objects,small kitchen items crowded around a counter,confirm at full resolution
+20261124_120300.jpg,low light; clutter; oblique view,dark desk with electronics and several overlapping items,confirm at full resolution
+20261121_113432.jpg,clutter; overlapping instances,crowded tabletop with partially occluded packages and cups,confirm at full resolution
+20261121_130123.jpg,clutter; overlapping objects,trash bin filled with overlapping boxes and packaging,confirm at full resolution
