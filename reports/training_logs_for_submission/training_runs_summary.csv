@@ -1,0 +1,7 @@
+﻿model,weights,status,started_at_utc,elapsed_minutes,epochs,gpu_names,training_log_file
+RF-DETR-Seg Nano,pretrained,completed,2026-11-21T06:45:38.850249+00:00,26.18,50,Tesla T4; Tesla T4,rf_detr_seg_nano/pretrained_metrics.csv
+RF-DETR-Seg Nano,scratch,completed,2026-11-21T07:11:49.671539+00:00,25.35,50,Tesla T4; Tesla T4,rf_detr_seg_nano/scratch_metrics.csv
+YOLO26n-Seg,pretrained,completed,2026-11-21T10:56:07.884621+00:00,10.59,50,Tesla T4; Tesla T4,yolo26n_seg/pretrained_results.csv
+YOLO26n-Seg,scratch,completed,2026-11-21T11:06:43.528623+00:00,10.11,50,Tesla T4; Tesla T4,yolo26n_seg/scratch_results.csv
+Mask R-CNN,pretrained,completed,2026-11-20T15:24:41.507363+00:00,268.64,50,Tesla T4; Tesla T4,mask_rcnn/pretrained_training_log.csv
+Mask R-CNN,scratch,completed,2026-11-20T19:53:20.130518+00:00,284.78,50,Tesla T4; Tesla T4,mask_rcnn/scratch_training_log.csv
