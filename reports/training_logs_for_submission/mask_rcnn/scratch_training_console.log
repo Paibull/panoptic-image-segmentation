@@ -1,0 +1,536 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+loading annotations into memory...loading annotations into memory...
+
+Done (t=0.04s)
+creating index...
+Done (t=0.04s)
+creating index...
+index created!
+loading annotations into memory...
+index created!
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Done (t=0.02s)
+creating index...
+index created!
+/usr/local/lib/python3.13/dist-packages/torchvision/models/detection/backbone_utils.py:162: UserWarning: Changing trainable_backbone_layers has no effect if neither pretrained nor pretrained_backbone have been set to True, falling back to trainable_backbone_layers=5 so that all layers are trainable
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/torchvision/models/detection/backbone_utils.py:162: UserWarning: Changing trainable_backbone_layers has no effect if neither pretrained nor pretrained_backbone have been set to True, falling back to trainable_backbone_layers=5 so that all layers are trainable
+  warnings.warn(
+Epoch 1/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 1/50: 100%|██████████| 100/100 [02:45<00:00,  1.66s/it, loss=1.3498]
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 1/50, loss=2.5238, val mask mAP=0.0000, time=2.8 min
+/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+Epoch 2/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 2/50: 100%|██████████| 100/100 [02:45<00:00,  1.66s/it, loss=2.8924]
+Epoch 2/50, loss=2.3231, val mask mAP=0.0001, time=2.8 min
+Epoch 3/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 3/50: 100%|██████████| 100/100 [02:44<00:00,  1.65s/it, loss=1.7100]
+Epoch 3/50, loss=2.2744, val mask mAP=0.0002, time=2.7 min
+Epoch 4/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 4/50: 100%|██████████| 100/100 [02:59<00:00,  1.79s/it, loss=1.7745]
+Epoch 4/50, loss=2.2291, val mask mAP=0.0005, time=3.0 min
+Epoch 5/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 5/50: 100%|██████████| 100/100 [02:56<00:00,  1.76s/it, loss=1.9733]
+Epoch 5/50, loss=2.2245, val mask mAP=0.0005, time=2.9 min
+Epoch 6/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 6/50: 100%|██████████| 100/100 [02:54<00:00,  1.75s/it, loss=3.3850]
+Epoch 6/50, loss=2.1947, val mask mAP=0.0008, time=2.9 min
+Epoch 7/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 7/50: 100%|██████████| 100/100 [02:52<00:00,  1.73s/it, loss=2.2291]
+Epoch 7/50, loss=2.1796, val mask mAP=0.0009, time=2.9 min
+Epoch 8/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 8/50: 100%|██████████| 100/100 [02:50<00:00,  1.70s/it, loss=2.1896]
+Epoch 8/50, loss=2.1793, val mask mAP=0.0019, time=2.8 min
+Epoch 9/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 9/50: 100%|██████████| 100/100 [02:48<00:00,  1.68s/it, loss=1.7211]
+Epoch 9/50, loss=2.1616, val mask mAP=0.0020, time=2.8 min
+Epoch 10/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 10/50: 100%|██████████| 100/100 [03:08<00:00,  1.88s/it, loss=3.0832]
+Epoch 10/50, loss=2.1225, val mask mAP=0.0029, time=3.1 min
+Epoch 11/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 11/50: 100%|██████████| 100/100 [03:11<00:00,  1.92s/it, loss=1.5942]
+Epoch 11/50, loss=2.1177, val mask mAP=0.0032, time=3.2 min
+Epoch 12/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 12/50: 100%|██████████| 100/100 [03:05<00:00,  1.86s/it, loss=2.2473]
+Epoch 12/50, loss=2.0996, val mask mAP=0.0030, time=3.1 min
+Epoch 13/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 13/50: 100%|██████████| 100/100 [03:07<00:00,  1.87s/it, loss=1.5227]
+Epoch 13/50, loss=2.0998, val mask mAP=0.0043, time=3.1 min
+Epoch 14/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 14/50: 100%|██████████| 100/100 [03:09<00:00,  1.89s/it, loss=2.7890]
+Epoch 14/50, loss=2.0643, val mask mAP=0.0062, time=3.2 min
+Epoch 15/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 15/50: 100%|██████████| 100/100 [03:09<00:00,  1.89s/it, loss=1.0549]
+Epoch 15/50, loss=2.0182, val mask mAP=0.0081, time=3.2 min
+Epoch 16/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 16/50: 100%|██████████| 100/100 [03:10<00:00,  1.90s/it, loss=2.3900]
+Epoch 16/50, loss=1.9951, val mask mAP=0.0064, time=3.2 min
+Epoch 17/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 17/50: 100%|██████████| 100/100 [03:07<00:00,  1.87s/it, loss=2.5997]
+Epoch 17/50, loss=1.9790, val mask mAP=0.0089, time=3.1 min
+Epoch 18/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 18/50: 100%|██████████| 100/100 [03:08<00:00,  1.88s/it, loss=0.7958]
+Epoch 18/50, loss=1.9536, val mask mAP=0.0077, time=3.1 min
+Epoch 19/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 19/50: 100%|██████████| 100/100 [03:10<00:00,  1.90s/it, loss=0.9498]
+Epoch 19/50, loss=1.9289, val mask mAP=0.0080, time=3.2 min
+Epoch 20/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 20/50: 100%|██████████| 100/100 [03:08<00:00,  1.88s/it, loss=1.3137]
+Epoch 20/50, loss=1.8968, val mask mAP=0.0140, time=3.1 min
+Epoch 21/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 21/50: 100%|██████████| 100/100 [03:11<00:00,  1.91s/it, loss=1.5948]
+Epoch 21/50, loss=1.8889, val mask mAP=0.0146, time=3.2 min
+Epoch 22/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 22/50: 100%|██████████| 100/100 [03:09<00:00,  1.89s/it, loss=2.8193]
+Epoch 22/50, loss=1.8728, val mask mAP=0.0141, time=3.2 min
+Epoch 23/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 23/50: 100%|██████████| 100/100 [03:07<00:00,  1.87s/it, loss=1.5022]
+Epoch 23/50, loss=1.8346, val mask mAP=0.0120, time=3.1 min
+Epoch 24/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 24/50: 100%|██████████| 100/100 [03:11<00:00,  1.91s/it, loss=2.7485]
+Epoch 24/50, loss=1.8061, val mask mAP=0.0123, time=3.2 min
+Epoch 25/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 25/50: 100%|██████████| 100/100 [03:06<00:00,  1.87s/it, loss=2.0973]
+Epoch 25/50, loss=1.7823, val mask mAP=0.0124, time=3.1 min
+Epoch 26/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 26/50: 100%|██████████| 100/100 [03:12<00:00,  1.92s/it, loss=1.2328]
+Epoch 26/50, loss=1.7747, val mask mAP=0.0123, time=3.2 min
+Epoch 27/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 27/50: 100%|██████████| 100/100 [03:02<00:00,  1.83s/it, loss=1.3427]
+Epoch 27/50, loss=1.7543, val mask mAP=0.0117, time=3.0 min
+Epoch 28/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 28/50: 100%|██████████| 100/100 [03:07<00:00,  1.88s/it, loss=1.1461]
+Epoch 28/50, loss=1.7252, val mask mAP=0.0131, time=3.1 min
+Epoch 29/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 29/50: 100%|██████████| 100/100 [03:07<00:00,  1.88s/it, loss=2.5243]
+Epoch 29/50, loss=1.7097, val mask mAP=0.0139, time=3.1 min
+Epoch 30/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 30/50: 100%|██████████| 100/100 [03:01<00:00,  1.82s/it, loss=1.1652]
+Epoch 30/50, loss=1.6913, val mask mAP=0.0119, time=3.0 min
+Epoch 31/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 31/50: 100%|██████████| 100/100 [02:58<00:00,  1.78s/it, loss=0.8817]
+Epoch 31/50, loss=1.6695, val mask mAP=0.0124, time=3.0 min
+Epoch 32/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 32/50: 100%|██████████| 100/100 [02:59<00:00,  1.79s/it, loss=2.1109]
+Epoch 32/50, loss=1.6359, val mask mAP=0.0136, time=3.0 min
+Epoch 33/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 33/50: 100%|██████████| 100/100 [02:55<00:00,  1.76s/it, loss=1.4435]
+Epoch 33/50, loss=1.6172, val mask mAP=0.0209, time=2.9 min
+Epoch 34/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 34/50: 100%|██████████| 100/100 [02:57<00:00,  1.78s/it, loss=2.4400]
+Epoch 34/50, loss=1.5893, val mask mAP=0.0163, time=3.0 min
+Epoch 35/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 35/50: 100%|██████████| 100/100 [02:51<00:00,  1.71s/it, loss=0.8294]
+Epoch 35/50, loss=1.5603, val mask mAP=0.0134, time=2.9 min
+Epoch 36/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 36/50: 100%|██████████| 100/100 [02:47<00:00,  1.67s/it, loss=2.4369]
+Epoch 36/50, loss=1.5430, val mask mAP=0.0150, time=2.8 min
+Epoch 37/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 37/50: 100%|██████████| 100/100 [02:51<00:00,  1.72s/it, loss=0.6390]
+Epoch 37/50, loss=1.5153, val mask mAP=0.0171, time=2.9 min
+Epoch 38/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 38/50: 100%|██████████| 100/100 [02:49<00:00,  1.70s/it, loss=2.5375]
+Epoch 38/50, loss=1.4948, val mask mAP=0.0147, time=2.8 min
+Epoch 39/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 39/50: 100%|██████████| 100/100 [02:49<00:00,  1.70s/it, loss=1.3101]
+Epoch 39/50, loss=1.4711, val mask mAP=0.0156, time=2.8 min
+Epoch 40/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 40/50: 100%|██████████| 100/100 [02:49<00:00,  1.70s/it, loss=1.4627]
+Epoch 40/50, loss=1.4525, val mask mAP=0.0178, time=2.8 min
+Epoch 41/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 41/50: 100%|██████████| 100/100 [02:43<00:00,  1.63s/it, loss=1.3161]
+Epoch 41/50, loss=1.4371, val mask mAP=0.0164, time=2.7 min
+Epoch 42/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 42/50: 100%|██████████| 100/100 [02:47<00:00,  1.68s/it, loss=1.2448]
+Epoch 42/50, loss=1.3896, val mask mAP=0.0205, time=2.8 min
+Epoch 43/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 43/50: 100%|██████████| 100/100 [02:43<00:00,  1.64s/it, loss=0.9500]
+Epoch 43/50, loss=1.3844, val mask mAP=0.0218, time=2.7 min
+Epoch 44/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 44/50: 100%|██████████| 100/100 [02:46<00:00,  1.66s/it, loss=1.3171]
+Epoch 44/50, loss=1.3734, val mask mAP=0.0174, time=2.8 min
+Epoch 45/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 45/50: 100%|██████████| 100/100 [02:45<00:00,  1.66s/it, loss=1.6010]
+Epoch 45/50, loss=1.3344, val mask mAP=0.0255, time=2.8 min
+Epoch 46/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 46/50: 100%|██████████| 100/100 [03:04<00:00,  1.85s/it, loss=1.7980]
+Epoch 46/50, loss=1.3172, val mask mAP=0.0212, time=3.1 min
+Epoch 47/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 47/50: 100%|██████████| 100/100 [03:04<00:00,  1.85s/it, loss=1.4911]
+Epoch 47/50, loss=1.2981, val mask mAP=0.0269, time=3.1 min
+Epoch 48/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 48/50: 100%|██████████| 100/100 [03:06<00:00,  1.87s/it, loss=1.4035]
+Epoch 48/50, loss=1.2915, val mask mAP=0.0241, time=3.1 min
+Epoch 49/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 49/50: 100%|██████████| 100/100 [03:03<00:00,  1.84s/it, loss=0.7888]
+Epoch 49/50, loss=1.2578, val mask mAP=0.0329, time=3.1 min
+Epoch 50/50:   0%|          | 0/100 [00:00<?, ?it/s]/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+/kaggle/working/train_maskrcnn.py:69: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  masks = torch.as_tensor(masks, dtype=torch.uint8)
+Epoch 50/50: 100%|██████████| 100/100 [03:00<00:00,  1.81s/it, loss=1.1502]
+Epoch 50/50, loss=1.2400, val mask mAP=0.0291, time=3.0 min
