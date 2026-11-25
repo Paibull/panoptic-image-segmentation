@@ -1,0 +1,44 @@
+﻿class_name,instance_count,active
+indoor-40-test,0,False
+backpack,15,True
+bed,8,True
+blanket,2,True
+book,8,True
+bottle,17,True
+bowl,3,True
+box,8,True
+cardboard,17,True
+cell phone,9,True
+chair,89,True
+couch,3,True
+cup,7,True
+door-stuff,7,True
+fire-extinguisher,3,True
+floor-wood,7,True
+fork,2,True
+hair drier,1,True
+handbag,3,True
+keyboard,11,True
+laptop,24,True
+mirror-stuff,1,True
+mouse,7,True
+pan,1,True
+paper,9,True
+person,24,True
+pillow,17,True
+plate,3,True
+potted plant,1,True
+remote,4,True
+scissors,1,True
+shelf,3,True
+sink,3,True
+spoon,4,True
+stairs,4,True
+stove-merged,1,True
+table-merged,47,True
+toilet,1,True
+trash-bin,6,True
+tv,1,True
+wall-wood,3,True
+window-blind,4,True
+window-other,17,True
