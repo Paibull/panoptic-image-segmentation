@@ -16,6 +16,7 @@ Split resmi terdiri dari 397 gambar train, 166 validasi, dan 359 test. Foto pers
 .
 ├── configs/
 │   └── class_names.json
+├── deklarasi_AI.md
 ├── notebooks/
 │   ├── inference_40_images.py
 │   ├── mask-rcnn.ipynb
